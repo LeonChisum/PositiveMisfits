@@ -1,0 +1,8 @@
+# Screenshot output (dev tool only)
+screenshots/
+
+# Node modules for screenshot scripts
+scripts/node_modules/
+
+# macOS
+.DS_Store

@@ -1,20 +1,923 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Positive Misfits | Home</title>
-    <link rel="stylesheet" href="/CSS/index.css">
-</head>
-<body>
-    <header id="showcase">
-        <h1>Start Your Journey</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, necessitatibus ipsa iste cupiditate expedita numquam placeat?</p>
-        <a href="#" class="button">Enter</a>
-    </header>
-    <section id="section1">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ut ipsum tenetur quas? Soluta, consequuntur tempora facilis dignissimos doloribus quasi veniam hic repellat, at reprehenderit eos sint, id obcaecati optio modi est? Voluptate quia quas cumque doloremque voluptates ducimus magnam sunt? Animi, excepturi! Impedit reprehenderit numquam expedita accusamus ab veritatis, illum laudantium. Id sit modi dolores tempora praesentium ipsa nam quos, fugiat odit voluptas? Nostrum ex numquam iusto enim molestiae accusamus modi, blanditiis cum nemo, quas quo id, temporibus quam quod nobis porro beatae voluptatibus inventore. Architecto iste quaerat repellat vitae facere numquam at impedit aut, quibusdam ad eos non!</p>
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Positive Misfits — We transform ideas into digital excellence. Web development, mobile apps, UI/UX design, and more."
+    />
+    <title>Positive Misfits | Digital Agency</title>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HYSX06M749"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-HYSX06M749');
+    </script>
+
+    <!-- Google Fonts — Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons (lightweight icon set) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- AOS — Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <link rel="stylesheet" href="../CSS/index.css" />
+  </head>
+  <body>
+    <!-- ════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════ -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <img src="../img/pm-logo.png" alt="Positive Misfits" height="36" />
+          <!-- <span class="logo-mark">PM</span> -->
+          <span class="logo-text">Positive Misfits</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#testimonials">Clients</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle colour theme">
+            <i data-lucide="sun" class="icon-sun"></i>
+            <i data-lucide="moon" class="icon-moon"></i>
+          </button>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <button
+        class="mobile-menu-close"
+        id="mobile-menu-close"
+        aria-label="Close menu"
+      >
+        <i data-lucide="x"></i>
+      </button>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#testimonials">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Get Started</a>
+    </div>
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <!-- ════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-inner">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="700">
+          <div class="hero-badge">
+            <i data-lucide="zap"></i>
+            <span>Digital Agency for Modern Brands</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Transforming Ideas<br />into
+            <span class="gradient-text">Digital Excellence</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            We craft high-performance websites, mobile apps, and digital
+            experiences that captivate your audience and accelerate your growth.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg"
+              >Start a Project</a
+            >
+            <a href="#work" class="btn btn-ghost btn-lg">
+              View Our Work
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>50+</strong>
+              <span>Projects Delivered</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <strong>30+</strong>
+              <span>Happy Clients</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <strong>5+</strong>
+              <span>Years Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hero-visual"
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="700"
+        >
+          <div class="hero-visual-glow"></div>
+
+          <!-- Floating service mini-cards -->
+          <div class="hero-float-card hero-float-card-1">
+            <div
+              class="hfc-icon"
+              style="background: linear-gradient(135deg, #52a852, #3a7a3a)"
+            >
+              <i data-lucide="globe"></i>
+            </div>
+            <div class="hfc-text">
+              <strong>Web Development</strong>
+              <span>React · Next.js · Node</span>
+            </div>
+          </div>
+
+          <div class="hero-float-card hero-float-card-2">
+            <div
+              class="hfc-icon"
+              style="background: linear-gradient(135deg, #f07028, #c05018)"
+            >
+              <i data-lucide="smartphone"></i>
+            </div>
+            <div class="hfc-text">
+              <strong>Mobile Apps</strong>
+              <span>iOS &amp; Android</span>
+            </div>
+          </div>
+
+          <div class="hero-float-card hero-float-card-3">
+            <div
+              class="hfc-icon"
+              style="background: linear-gradient(135deg, #f0b429, #c08010)"
+            >
+              <i data-lucide="palette"></i>
+            </div>
+            <div class="hfc-text">
+              <strong>UI/UX Design</strong>
+              <span>Figma · Prototyping</span>
+            </div>
+          </div>
+
+          <!-- TODO: Replace this placeholder with your actual hero graphic or mockup image -->
+          <div class="hero-mockup">
+            <img
+              src="https://placehold.co/540x400/1C1C1C/52A852?text=Your+Project+Here&font=inter"
+              alt="Project mockup"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- /.hero-inner -->
     </section>
-</body>
+
+    <!-- ════════════════════════════════════════════
+       SERVICES
+  ════════════════════════════════════════════ -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">What We Offer</span>
+          <h2 class="section-title">
+            Services Built for
+            <span class="gradient-text">Modern Business</span>
+          </h2>
+          <p class="section-subtitle">
+            From strategy to execution — end-to-end digital solutions tailored
+            to your goals.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #52a852, #3a7a3a)"
+            >
+              <i data-lucide="code-2"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              High-performance websites and web apps built with modern
+              frameworks. We pick the right stack for your needs — React,
+              Next.js, or plain fast HTML.
+            </p>
+            <a href="#contact" class="service-link"
+              >Learn more <i data-lucide="arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #3b82f6, #1d4ed8)"
+            >
+              <i data-lucide="smartphone"></i>
+            </div>
+            <h3>Mobile Apps</h3>
+            <p>
+              Native and cross-platform apps for iOS and Android. React Native
+              and Flutter for seamless multi-platform delivery on time and on
+              budget.
+            </p>
+            <a href="#contact" class="service-link"
+              >Learn more <i data-lucide="arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #a855f7, #7c3aed)"
+            >
+              <i data-lucide="palette"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>
+              User-centred design that converts. Wireframes, prototypes, and
+              full visual systems in Figma that delight users at every
+              touchpoint.
+            </p>
+            <a href="#contact" class="service-link"
+              >Learn more <i data-lucide="arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #f07028, #c05018)"
+            >
+              <i data-lucide="megaphone"></i>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>
+              Data-driven campaigns across search, social, and content. We build
+              audiences that convert and analytics that prove ROI clearly.
+            </p>
+            <a href="#contact" class="service-link"
+              >Learn more <i data-lucide="arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #f0b429, #c08010)"
+            >
+              <i data-lucide="cloud"></i>
+            </div>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>
+              Scalable infrastructure on AWS, GCP, and Azure. CI/CD pipelines,
+              containerisation, and monitoring that keeps your product running
+              reliably.
+            </p>
+            <a href="#contact" class="service-link"
+              >Learn more <i data-lucide="arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #14b8a6, #0f766e)"
+            >
+              <i data-lucide="trending-up"></i>
+            </div>
+            <h3>SEO &amp; Analytics</h3>
+            <p>
+              Technical SEO, content strategy, and analytics setup that drives
+              organic growth and surfaces the insights that actually matter to
+              your business.
+            </p>
+            <a href="#contact" class="service-link"
+              >Learn more <i data-lucide="arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+       WORK / PORTFOLIO
+  ════════════════════════════════════════════ -->
+    <section id="work" class="section-dark">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Our Work</span>
+          <h2 class="section-title">
+            Projects We're <span class="gradient-text">Proud Of</span>
+          </h2>
+          <p class="section-subtitle">
+            A selection of recent work across industries and platforms.
+          </p>
+        </div>
+
+        <div class="work-grid">
+          <!-- TODO: Replace all placeholder images with actual project screenshots -->
+          <!-- TODO: Replace all href="#" with actual project/case study URLs -->
+
+          <a
+            href="#"
+            class="work-card work-card-wide"
+            data-aos="fade-up"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://placehold.co/800x460/1C1C1C/52A852?text=Project+One&font=inter"
+              alt="Project One"
+              loading="lazy"
+            />
+            <div class="work-overlay">
+              <span class="work-tag">Web App</span>
+              <h3>Project One</h3>
+              <p>
+                Full-stack SaaS platform with real-time collaboration features
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="work-card"
+            data-aos="fade-up"
+            data-aos-delay="80"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://placehold.co/480x460/161616/F07028?text=Project+Two&font=inter"
+              alt="Project Two"
+              loading="lazy"
+            />
+            <div class="work-overlay">
+              <span class="work-tag">Mobile App</span>
+              <h3>Project Two</h3>
+              <p>iOS &amp; Android app for e-commerce</p>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="work-card"
+            data-aos="fade-up"
+            data-aos-delay="160"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://placehold.co/480x460/161616/F0B429?text=Project+Three&font=inter"
+              alt="Project Three"
+              loading="lazy"
+            />
+            <div class="work-overlay">
+              <span class="work-tag">UI/UX</span>
+              <h3>Project Three</h3>
+              <p>Brand redesign and full design system</p>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="work-card"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://placehold.co/480x460/161616/3B82F6?text=Project+Four&font=inter"
+              alt="Project Four"
+              loading="lazy"
+            />
+            <div class="work-overlay">
+              <span class="work-tag">Web Dev</span>
+              <h3>Project Four</h3>
+              <p>Marketing site with headless CMS</p>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="work-card"
+            data-aos="fade-up"
+            data-aos-delay="80"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://placehold.co/480x460/161616/A855F7?text=Project+Five&font=inter"
+              alt="Project Five"
+              loading="lazy"
+            />
+            <div class="work-overlay">
+              <span class="work-tag">Full Stack</span>
+              <h3>Project Five</h3>
+              <p>Enterprise analytics dashboard</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+       PROCESS
+  ════════════════════════════════════════════ -->
+    <section id="process">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">How We Work</span>
+          <h2 class="section-title">
+            Our <span class="gradient-text">Process</span>
+          </h2>
+          <p class="section-subtitle">
+            A clear, collaborative process that keeps you in the loop from day
+            one to launch.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step" data-aos="fade-up" data-aos-delay="0">
+            <div class="process-number">01</div>
+            <div class="process-icon-wrap"><i data-lucide="lightbulb"></i></div>
+            <h3>Discover</h3>
+            <p>
+              We dive deep into your goals, audience, and competition to build a
+              clear picture of what success looks like for your project.
+            </p>
+          </div>
+
+          <div
+            class="process-connector"
+            data-aos="fade-up"
+            data-aos-delay="80"
+          ></div>
+
+          <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+            <div class="process-number">02</div>
+            <div class="process-icon-wrap">
+              <i data-lucide="pencil-ruler"></i>
+            </div>
+            <h3>Design</h3>
+            <p>
+              Wireframes, prototypes, and high-fidelity mockups — we validate
+              the experience before a single line of code is written.
+            </p>
+          </div>
+
+          <div
+            class="process-connector"
+            data-aos="fade-up"
+            data-aos-delay="160"
+          ></div>
+
+          <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+            <div class="process-number">03</div>
+            <div class="process-icon-wrap"><i data-lucide="terminal"></i></div>
+            <h3>Build</h3>
+            <p>
+              Agile sprints, code reviews, and weekly demos. You see real
+              progress at every step of the development cycle.
+            </p>
+          </div>
+
+          <div
+            class="process-connector"
+            data-aos="fade-up"
+            data-aos-delay="240"
+          ></div>
+
+          <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+            <div class="process-number">04</div>
+            <div class="process-icon-wrap"><i data-lucide="rocket"></i></div>
+            <h3>Launch</h3>
+            <p>
+              QA-tested, performance-optimised, and deployed. We stay on after
+              launch to make sure everything runs smoothly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+       STATS STRIP
+  ════════════════════════════════════════════ -->
+    <section id="stats">
+      <div class="container">
+        <div class="stats-grid" data-aos="fade-up">
+          <div class="stat-item">
+            <strong class="stat-number"
+              >50<span class="stat-suffix">+</span></strong
+            >
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <strong class="stat-number"
+              >30<span class="stat-suffix">+</span></strong
+            >
+            <span class="stat-label">Happy Clients</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <strong class="stat-number"
+              >5<span class="stat-suffix">+</span></strong
+            >
+            <span class="stat-label">Years Experience</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <strong class="stat-number"
+              >99<span class="stat-suffix">%</span></strong
+            >
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+       TESTIMONIALS
+  ════════════════════════════════════════════ -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Client Stories</span>
+          <h2 class="section-title">
+            What Our <span class="gradient-text">Clients Say</span>
+          </h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- TODO: Replace all placeholder avatars and copy with actual client testimonials -->
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Positive Misfits completely transformed our online presence.
+              Their attention to detail and ability to understand our vision was
+              remarkable. We saw a 40% increase in leads within the first
+              month."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://placehold.co/48x48/52A852/FFFFFF?text=JD"
+                alt="Client Jane Doe"
+                loading="lazy"
+              />
+              <div>
+                <strong>Jane Doe</strong>
+                <span>CEO, Acme Corp</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The app they built exceeded every expectation. Delivered on time,
+              on budget, and with a level of polish we didn't think was possible
+              at this scale. Our users absolutely love it."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://placehold.co/48x48/F07028/FFFFFF?text=MS"
+                alt="Client Mark Smith"
+                loading="lazy"
+              />
+              <div>
+                <strong>Mark Smith</strong>
+                <span>Product Lead, StartupCo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "I've worked with many agencies, but none came close to the
+              strategic thinking and execution quality of Positive Misfits.
+              They're genuine partners, not just vendors."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://placehold.co/48x48/F0B429/FFFFFF?text=AJ"
+                alt="Client Alex Johnson"
+                loading="lazy"
+              />
+              <div>
+                <strong>Alex Johnson</strong>
+                <span>Founder, BrandX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+       CONTACT / CTA
+  ════════════════════════════════════════════ -->
+    <section id="contact" class="section-dark">
+      <div class="container">
+        <div class="contact-wrapper" data-aos="fade-up">
+          <!-- Left: contact info -->
+          <div class="contact-info">
+            <span class="section-label">Get In Touch</span>
+            <h2 class="section-title">
+              Ready to Build<br /><span class="gradient-text"
+                >Something Great?</span
+              >
+            </h2>
+            <p>
+              Tell us about your project. We'll get back to you within 24 hours
+              to kick off the conversation.
+            </p>
+
+            <ul class="contact-details">
+              <li>
+                <i data-lucide="mail"></i>
+                <a href="mailto:positivemisfits@gmail.com"
+                  >positivemisfits@gmail.com</a
+                >
+              </li>
+              <li>
+                <i data-lucide="phone"></i>
+                <!-- TODO: Replace with your actual phone number -->
+                <a href="tel:+10000000000">(000) 000-0000</a>
+              </li>
+              <li>
+                <i data-lucide="map-pin"></i>
+                <span>Orlando, Florida</span>
+              </li>
+            </ul>
+
+            <div class="contact-socials">
+              <!-- TODO: Replace all href="#" with actual social media profile URLs -->
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i data-lucide="linkedin"></i
+              ></a>
+              <a
+                href="#"
+                aria-label="Twitter / X"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i data-lucide="twitter"></i
+              ></a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i data-lucide="instagram"></i
+              ></a>
+              <a
+                href="#"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i data-lucide="github"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Right: Netlify contact form -->
+          <!--
+          NETLIFY FORM SETUP:
+          1. Deploy this file to Netlify (it auto-detects data-netlify="true")
+          2. In Netlify dashboard → Forms → contact → set up email notifications
+          TODO: Set the action URL below to a custom thank-you page once created,
+                e.g. action="/HTML/thank-you.html"
+        -->
+          <form
+            class="contact-form"
+            name="more-info"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <!-- Netlify spam honeypot — keep hidden -->
+            <p hidden>
+              <label>Skip this: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@company.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="company"
+                >Company <span class="form-optional">(Optional)</span></label
+              >
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Your Company"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service…</option>
+                <option value="web-development">Web Development</option>
+                <option value="mobile-apps">Mobile Apps</option>
+                <option value="ui-ux-design">UI/UX Design</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="cloud-devops">Cloud &amp; DevOps</option>
+                <option value="seo-analytics">SEO &amp; Analytics</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Describe your project, goals, and timeline…"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-full">
+              Send Message
+              <i data-lucide="send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo">
+              <img
+                src="../img/pm-logo.png"
+                alt="Positive Misfits"
+                height="34"
+              />
+
+              <!-- <span class="logo-mark">PM</span> -->
+              <span class="logo-text">Positive Misfits</span>
+            </a>
+            <p>
+              Transforming ideas into digital excellence. Building tomorrow's
+              products, today.
+            </p>
+            <div class="footer-socials">
+              <!-- TODO: Replace all href="#" with actual social media profile URLs -->
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i data-lucide="linkedin"></i
+              ></a>
+              <a
+                href="#"
+                aria-label="Twitter / X"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i data-lucide="twitter"></i
+              ></a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i data-lucide="instagram"></i
+              ></a>
+              <a
+                href="#"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i data-lucide="github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">Mobile Apps</a></li>
+              <li><a href="#services">UI/UX Design</a></li>
+              <li><a href="#services">Digital Marketing</a></li>
+              <li><a href="#services">Cloud &amp; DevOps</a></li>
+              <li><a href="#services">SEO &amp; Analytics</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#work">Our Work</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#testimonials">Clients</a></li>
+              <!-- TODO: Link to a blog once created -->
+              <li><a href="#">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <!-- TODO: Create privacy policy and terms of service pages -->
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="footer-year"></span> Positive Misfits. All rights
+            reserved.
+          </p>
+          <p>
+            Built with <span class="footer-heart">♥</span> by Positive Misfits
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS init script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../JS/main.js"></script>
+  </body>
 </html>

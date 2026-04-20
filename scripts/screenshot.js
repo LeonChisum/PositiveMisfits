@@ -16,7 +16,7 @@ const path      = require('path');
 const fs        = require('fs');
 
 /* ── Config ─────────────────────────────────────────────────────── */
-const BASE_URL   = 'http://localhost:8000/HTML/index.html';
+const BASE_URL   = 'http://localhost:8000/index.html';
 const OUT_DIR    = path.resolve(__dirname, '..', 'screenshots');
 const VIEWPORTS  = [
   { label: 'desktop', width: 1440, height: 900  },
